@@ -10,7 +10,7 @@ Each publication can be lent out to members of the library with a due date for r
 
 ## Compiling and Testing The Program
 
-To compile and test how this program works, use the command below:
+To compile and test how this program works, use the following command:
 
 ```bash
 g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
@@ -38,4 +38,34 @@ LibApp.cpp
 LibApp.h
 LibAppMain.cpp
 LibRecs.txt
+LibRecsSmall.txt
+```
+
+## Data Entries For Testing
+To observe in detail how each operation of the program works, utilize the provided data below:
+### Data Entry #1
+Data file: [LibRecsSmall.txt](src/LibRecsSmall.txt)
+
+- load
+- Book and Publication entry
+- setting the library reference number
+- save
+
+Entry:
+```Text
+1
+1
+S001
+Book one
+2023/8/5
+John Doe
+1
+1
+2
+S002
+Daily one
+2023/8/5
+1
+0
+1
 ```
