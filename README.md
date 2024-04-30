@@ -15,3 +15,27 @@ To compile and test how this program works, use the command below:
 ```bash
 g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
 ```
+
+## Files To Use
+Use the files mentioned below to compile the program:
+```Text
+Lib.h
+Utils.cpp
+Utils.h
+Date.cpp
+Date.h
+Menu.cpp
+Menu.h
+Streamable.cpp
+Streamable.h
+Publication.cpp
+Publication.h
+Book.cpp
+Book.h
+PublicationSelector.cpp
+PublicationSelector.h
+LibApp.cpp
+LibApp.h
+LibAppMain.cpp
+LibRecs.txt
+```
