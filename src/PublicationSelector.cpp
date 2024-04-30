@@ -1,19 +1,11 @@
-// Final Project 
-// PublicationSelector
-// File PublicationSelector.h
-// Version 1.0
-// Author	Fardad Soleimanloo
-// Revision History
-// -----------------------------------------------------------
-// Name               Date                 Reason
-//
-/////////////////////////////////////////////////////////////////
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
 #include "PublicationSelector.h"
 using namespace std;
+
 namespace sdds {
+
    void PublicationSelector::display(int page) const {
       cout << m_title << endl 
            << " Row  |LocID | Title                          |Mem ID | Date       | Author          |" << endl
@@ -27,6 +19,7 @@ namespace sdds {
          cout << "- " << *m_pub[i] << endl;
       }
    }
+
    int PublicationSelector::getSelectedLibRef()const{
       bool ok{};
       char newline{};
@@ -87,18 +80,20 @@ namespace sdds {
       return retVal;
    }
     
-
    PublicationSelector::~PublicationSelector() {
       delete[] m_pub;
    }
+
    PublicationSelector::PublicationSelector(const char* title, int pageSize) :m_pageSize{ pageSize } {
       strncpy(m_title, title, 80);
       m_title[80] = 0;
       m_pub = new const Publication*[m_arraySize = allocationUnit];
    }
+
    PublicationSelector& PublicationSelector::operator<<(const Publication& pub) {
       return operator<<(&pub);
    }
+
    PublicationSelector& PublicationSelector::operator<<(const Publication* pub) {
       if (m_noOfPubs == m_arraySize) {
          const Publication** temp = new const Publication*[m_arraySize += allocationUnit];
@@ -117,6 +112,7 @@ namespace sdds {
       m_pub = new const Publication*[20];
       m_noOfPubs = 0;
    }
+
    int PublicationSelector::run() {
       int retVal{};
       do {
@@ -125,14 +121,11 @@ namespace sdds {
          if (retVal && retVal < 3) {
             if (retVal == 2) retVal = -1;
             m_currentPage += retVal;
-            //if (m_currentPage == 0) 
-            //   m_currentPage = 1; // don't go before first page
-            //else if (m_currentPage * m_pageSize > m_noOfPubs) //((m_currentPage-1) * m_pageSize > m_noOfPubs) 
-            //   m_currentPage = m_noOfPubs/m_pageSize +1; // don't go after last page
          }
       } while (retVal && retVal < 3);
       return retVal;
    }
+
    void PublicationSelector::sort() {
       int i, j;
       const Publication* temp{};
@@ -155,6 +148,7 @@ namespace sdds {
          }
       }
    }
+
    PublicationSelector::operator bool()const {
       return m_noOfPubs > 0;
    }

@@ -1,16 +1,8 @@
-// Final Project 
-// PublicationSelector
-// File PublicationSelector.h
-// Version 1.0
-// Author	Fardad Soleimanloo
-// Revision History
-// -----------------------------------------------------------
-// Name               Date                 Reason
-//                    
-/////////////////////////////////////////////////////////////////
 #ifndef SDDS_PUBLICATIONSELECTOR_H
 #define SDDS_PUBLICATIONSELECTOR_H
+
 #include "Publication.h"
+
 namespace sdds {
    class PublicationSelector {
       const int allocationUnit{ 10 };

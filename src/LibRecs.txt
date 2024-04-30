@@ -330,3 +330,4 @@ B	1329	Y853	Men Are from Mars/ Women Are from Venus	98905	2023/07/12	John Gray
 B	1330	C631	The Hardy Boys	42472	2023/07/20	Various authors asFranklin W. Dixon
 B	1331	M406	The Bobbsey Twins	37365	2023/07/16	Various authors asLaura Lee Hope
 B	1332	V259	Tarzan	76029	2023/07/17	Edgar Rice Burroughs
+B	1333	S002	Book One	0	2023/08/10	John Doe
