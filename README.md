@@ -1,6 +1,6 @@
 # Project: Library-Management-System for Seneca
 
-## About:
+
 
 When new books and other publications arrive in the Seneca Library, it's crucial to ensure they are efficiently processed and made available for lending. This involves tagging each publication with relevant information and organizing them on shelves in a way that makes them easy to find when needed.
 
