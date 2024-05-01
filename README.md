@@ -13,7 +13,7 @@ Each publication can be lent out to members of the library with a due date for r
 To compile and test how this program works, use the following command:
 
 ```bash
-g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
+g++ -Wall -std=c++11 -g -o libApplication file1.cpp file2.cpp ...
 ```
 
 ## Files To Use
@@ -185,7 +185,7 @@ Data Entry:
 x
 3
 1
-<ENTER>
+<ENT ER>
 1
 1
 123456
